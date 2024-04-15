@@ -10,7 +10,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const app = express();
-app.use(express.json);
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Hello world ");
